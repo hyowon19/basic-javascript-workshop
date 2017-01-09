@@ -19,6 +19,26 @@
 * Write a function that takes two numbers and multiplies them together. Test your function on a few inputs. Write in your comments what happens when you pass something other than a number to your function.
 * Write a function that takes two numbers and a string. If the string is ‘add’, then return the sum of the numbers. If the string is ‘subtract’, return the difference. If the string is ‘mult’, return the product. If the string is ‘div’, return the ratio. Otherwise return 0.
 * Write a function that takes a string and a number, and returns the string repeated that many number of times. Test your function with various inputs.
+* Write a function that uses a `for` loop to print the numbers from 1 to 10 inclusively.
+* Write a function that uses a `for` loop to print the numbers from 1 to 10 inclusively, but as words ("one", "two", ...). As an extra challenge, try to find a solution that does not use an `if/else`:
+```javascript
+if (i === 1) {
+  console.log("one");
+}
+else if (i === 2) {
+  console.log("two");
+}
+```
+* Write a function that uses a `for` loop to print the numbers from 1 to 10 inclusively, but for each number, print it that many number of times:
+```
+1
+2
+2
+3
+3
+3
+...
+```
 * Write a function that takes a string, and returns the reverse of that string. For example, if you pass the function the string “hello”, it should return “olleh”. Test your function on a few inputs, including the empty string.
 * Write a function that takes a number and returns the factorial of a number. The factorial of 5 is 5x4x3x2x1. The factorial of 0 is 1. Test your input on a few numbers, including negative numbers.
 * Write a function that takes a phrase as a string, and returns the longest word in that phrase. If the phrase contains more than one such word, return the first occurrence. Test your function on a few inputs.
