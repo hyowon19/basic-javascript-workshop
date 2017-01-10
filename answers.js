@@ -130,3 +130,4 @@ var reverseName = function (aString) {
 }
 
 reverseName("CareBear");
+reverseName("");
