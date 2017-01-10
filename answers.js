@@ -195,3 +195,17 @@ var capitalWords = function (aString) {
 console.log(capitalWords("hey tYYere bLAh bJJh blah blah"));
 console.log(capitalWords("Hello again world, I am back and I don't feel very nICe right NOWZ!"));
 
+// Write a function that takes an array and returns the largest number of the array. Test your function on a few inputs.
+var largestNumber = function (anArray) {
+    var largest = 0;
+    for (var i = 0; i < anArray.length; i++) {
+        if (largest < anArray[i]) {
+            largest = anArray[i];
+        }
+    }
+    return largest;
+}
+
+console.log(largestNumber([1, 4, 98, 102, -4, 3, 2765, 97]));
+console.log(largestNumber([-2221, 47963874, 0, 102, -9876544, 3, 2433265, "hello"]));
+console.log(largestNumber([1, 4, true, 98, 102,-4.97612458,3, 2765324536 , false, 97]));
