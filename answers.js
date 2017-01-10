@@ -151,3 +151,21 @@ var numberFactorial = function (aNum) {
 console.log(numberFactorial(8));
 console.log(numberFactorial(0));
 console.log(numberFactorial(-3));
+
+// This function will take a phrase as a string and return the longest word in that phrase.
+var longestWord = function (aString) {
+    var wordArr = aString.split(" ");
+    var longWord = 0;
+    var longest = "";
+    for (var i = 0; i < wordArr.length; i++) {
+        if (longWord < wordArr[i].length) {
+            longWord = wordArr[i].length;
+            longest = wordArr[i];
+        }
+    }
+    return longest;
+}
+
+console.log(longestWord("Hey there you sillynilly dog"));
+console.log(longestWord("Yo what's up??? Come to California?"));
+console.log(longestWord("About that scientific book you found..."));
