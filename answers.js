@@ -130,4 +130,24 @@ var reverseName = function (aString) {
 }
 
 reverseName("CareBear");
+
 reverseName("");
+
+// This function will return the factorial of a given number.
+var numberFactorial = function (aNum) {
+    var numFact = 1;
+    if (aNum < 0) {
+        numFact = "Undefined. Negative factorials are not possible."
+        return numFact;  
+    }
+    else {
+        for (var i = aNum; i > 0; i--){
+            numFact = numFact * i;
+        }
+    }
+    return numFact;
+}
+
+console.log(numberFactorial(8));
+console.log(numberFactorial(0));
+console.log(numberFactorial(-3));
