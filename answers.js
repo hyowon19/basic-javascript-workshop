@@ -168,4 +168,30 @@ var longestWord = function (aString) {
 
 console.log(longestWord("Hey there you sillynilly dog"));
 console.log(longestWord("Yo what's up??? Come to California?"));
-console.log(longestWord("About that scientific book you found..."));
+console.log(longestWord("About that scientific book you found....."));
+
+// Write a function that takes a phrase, and returns the same phrase with every word capitalized. 
+// For example, if you pass your function "hello world", it should return “Hello World” and if you pass it 
+// “HELLO WORLD” or even "HeLLo WoRLD", it will also return "Hello World". Test your function of a few inputs.
+var capitalWords = function (aString) {
+    var wordArr = aString.toLowerCase().split(" ");
+    var tempWord = "";
+    var firstLetter = "";
+    var propCapital = "";
+    for (var i = 0; i < wordArr.length; i++) {
+        tempWord = wordArr[i];
+        firstLetter = tempWord[0].toUpperCase();
+        propCapital = propCapital + firstLetter;
+        for (var j = 1; j < tempWord.length; j++) {
+            propCapital = propCapital + tempWord[j];
+        }
+        if (!(wordArr[i] === " ")) {
+            propCapital = propCapital + " ";
+        }
+    }
+    return propCapital;
+}
+
+console.log(capitalWords("hey tYYere bLAh bJJh blah blah"));
+console.log(capitalWords("Hello again world, I am back and I don't feel very nICe right NOWZ!"));
+
