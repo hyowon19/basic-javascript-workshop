@@ -29,7 +29,6 @@ console.log(characterPos("", 5));
 
 // This function will take two numbers and add them together.
 // If strings are added, it will add the strings together.
-// If undeclared variables are added, it will result in an error.
 var addTwo = function (a, b) {
   return a + b;  
 };
@@ -38,5 +37,14 @@ console.log(addTwo(3, 87));
 console.log(addTwo(63736, 882));
 console.log(addTwo(0, 0));
 console.log(addTwo("utah", "winner"));
-console.log(addTwo(utah, winner));
 
+// This function will take two numbers and multiply them together.
+// If strings are added, it will return a NaN.
+var multiplyTwo = function (a, b) {
+  return a * b;  
+};
+
+console.log(multiplyTwo(4, 5));
+console.log(multiplyTwo(55, 55));
+console.log(multiplyTwo(9, 0));
+console.log(multiplyTwo("baby", "face"));
