@@ -28,6 +28,8 @@ console.log(characterPos("Yippee Quick", 8));
 console.log(characterPos("", 5));
 
 // This function will take two numbers and add them together.
+// If strings are added, it will add the strings together.
+// If undeclared variables are added, it will result in an error.
 var addTwo = function (a, b) {
   return a + b;  
 };
@@ -35,3 +37,6 @@ var addTwo = function (a, b) {
 console.log(addTwo(3, 87));
 console.log(addTwo(63736, 882));
 console.log(addTwo(0, 0));
+console.log(addTwo("utah", "winner"));
+console.log(addTwo(utah, winner));
+
