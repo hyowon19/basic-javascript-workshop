@@ -47,4 +47,33 @@ var multiplyTwo = function (a, b) {
 console.log(multiplyTwo(4, 5));
 console.log(multiplyTwo(55, 55));
 console.log(multiplyTwo(9, 0));
-console.log(multiplyTwo("baby", "face"));
+console.log(multiplyTwo("utah", "winner"));
+
+// Write a function that takes two numbers and a string. 
+// If the string is ‘add’, then return the sum of the numbers. 
+// If the string is ‘subtract’, return the difference. 
+// If the string is ‘mult’, return the product. 
+// If the string is ‘div’, return the ratio. Otherwise return 0.
+var twoNumOneString = function(num1, num2, someString) {
+    if (someString.toUpperCase() === "ADD") {
+        return num1 + num2;
+    }
+    else if (someString.toUpperCase() === "SUBTRACT") {
+        return Math.abs(num1 - num2);
+    }
+    else if (someString.toUpperCase() === "MULT") {
+        return num1 * num2;
+    }
+    else if (someString.toUpperCase() === "DIV") {
+        return num1 / num2;
+    }
+    else {
+        return 0;
+    }
+};
+
+console.log(twoNumOneString(87, 22, "add"));
+console.log(twoNumOneString(34, 100, "subtract"));
+console.log(twoNumOneString(20, 3, "mult"));
+console.log(twoNumOneString(50, 10, "div"));
+console.log(twoNumOneString(3, 2, ""));
