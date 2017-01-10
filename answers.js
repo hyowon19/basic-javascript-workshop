@@ -90,3 +90,11 @@ var stringRepeat = function (aString, aNum) {
 console.log(stringRepeat("Hello World", 10));
 console.log(stringRepeat("boolah", "hello"));
 
+// This function will print the numbers from 1 to 10 inclusively.
+var oneToTen = function () {
+    for (var i = 1; i <= 10; i++) {
+        console.log(i);
+    }
+};
+
+oneToTen();
