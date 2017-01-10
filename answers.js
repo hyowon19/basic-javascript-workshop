@@ -108,3 +108,14 @@ var oneToTenLoop = function () {
 }
 
 oneToTenLoop();
+
+// This function will write a loop printing numbers 1 to 10, but will print each number by that number that many times.
+var printLoopByNumber = function () {
+    for (var i = 1; i <= 10; i++) {
+        for (var j = 1; j <= i; j++) {
+            console.log(i);
+        }
+    }
+};
+
+printLoopByNumber();
