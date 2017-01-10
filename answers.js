@@ -77,3 +77,15 @@ console.log(twoNumOneString(34, 100, "subtract"));
 console.log(twoNumOneString(20, 3, "mult"));
 console.log(twoNumOneString(50, 10, "div"));
 console.log(twoNumOneString(3, 2, ""));
+
+// This function will take a string and a number, and then return the string repeated that many number of times.
+var stringRepeat = function (aString, aNum) {
+    var outPut = "";
+    for (var i = 0; i < aNum; i++) {
+        outPut = outPut + aString + "\n";
+    }
+    return outPut;
+}
+
+console.log(stringRepeat("Hello World", 10));
+console.log(stringRepeat("boolah", "hello"));
