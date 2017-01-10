@@ -98,3 +98,13 @@ var oneToTen = function () {
 };
 
 oneToTen();
+
+// This function will write a loop printing 1 to 10 as words.
+var oneToTenLoop = function () {
+    var wordLoop = ["one","two","three","four","five","six","seven","eight","nine","ten"];
+    for (var i = 0; i < 10; i++) {
+        console.log(wordLoop[i]);
+    }
+}
+
+oneToTenLoop();
