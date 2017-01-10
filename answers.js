@@ -25,4 +25,13 @@ var characterPos = function(someString, someNum) {
 
 console.log(characterPos("Heuioo there", 4));
 console.log(characterPos("Yippee Quick", 8));
-console.log(characterPos("", 3));
+console.log(characterPos("", 5));
+
+// This function will take two numbers and add them together.
+var addTwo = function (a, b) {
+  return a + b;  
+};
+
+console.log(addTwo(3, 87));
+console.log(addTwo(63736, 882));
+console.log(addTwo(0, 0));
