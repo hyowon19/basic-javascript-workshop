@@ -119,3 +119,14 @@ var printLoopByNumber = function () {
 };
 
 printLoopByNumber();
+
+// This function will take a string and print it in reverse.
+var reverseName = function (aString) {
+    var reverse = "";
+    for (var i = (aString.length - 1); i >= 0; i--) {
+        reverse = reverse + aString[i];
+    }
+    console.log(reverse);
+}
+
+reverseName("CareBear");
