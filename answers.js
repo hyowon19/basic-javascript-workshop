@@ -209,3 +209,13 @@ var largestNumber = function (anArray) {
 console.log(largestNumber([1, 4, 98, 102, -4, 3, 2765, 97]));
 console.log(largestNumber([-2221, 47963874, 0, 102, -9876544, 3, 2433265, "hello"]));
 console.log(largestNumber([1, 4, true, 98, 102,-4.97612458,3, 2765324536 , false, 97]));
+
+// Write a function that takes an array, and returns a filtered array. 
+// The filtered array should only contain the truthy values from the initial array. 
+// Hint: there is an array method called filter that can help you with this :)
+var truthyFilter = function (anArray) {
+     return anArray.filter(Boolean);
+}
+
+console.log(truthyFilter([1, false, 0, "hello", !true, -9999, 0.34, NaN, "8027347", NaN, Math.random(), NaN, 468523, "hey how are you?"]));
+
