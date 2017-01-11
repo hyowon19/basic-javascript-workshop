@@ -219,3 +219,14 @@ var truthyFilter = function (anArray) {
 
 console.log(truthyFilter([1, false, 0, "hello", !true, -9999, 0.34, NaN, "8027347", NaN, Math.random(), NaN, 468523, "hey how are you?"]));
 
+// Write a function that takes an array of numbers, and returns the sum of all the numbers in the array.
+var arraySum = function (anArray) {
+    var total = 0;
+    for (var i = 0; i < anArray.length; i++) {
+        total += anArray[i];
+    }
+    return total;
+}
+
+console.log(arraySum([2, 34, 887, 153, 90, 10000, 26, 5, 22]));
+console.log(arraySum([0, 34, 887, 153, 90, -10000, 26, 5, 2200, -5635, 285.5]));
